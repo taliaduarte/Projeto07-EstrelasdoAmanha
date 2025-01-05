@@ -16,7 +16,7 @@ main .main-container {
     margin-left: auto;
 }
 
-main .back {
+main .voltar {
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -49,5 +49,5 @@ aside h2 {
 }
 
 aside h2 span {
-    color: var(--text-highlight);
+    color: var(--text-hightlight);
 }
