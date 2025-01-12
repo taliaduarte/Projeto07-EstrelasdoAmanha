@@ -20,7 +20,9 @@ label + .radio-wrapper {
     position: relative;
 }
 
-.radio-inner input,input:focus,input:hover {
+.radio-inner input, 
+.radio-inner input:focus, 
+.radio-inner input:hover {
     all: unset;
     position: absolute;
     inset: 0;
@@ -38,7 +40,7 @@ label + .radio-wrapper {
 }
 
 .radio-inner:hover, .radio-inner:focus-within {
-    border: 1px solid var(--stroke-hightlight);  
+    border: 1px solid var(--stroke-highlight);  
 }
 
 .radio-inner:hover .radio-image, 
@@ -47,7 +49,7 @@ label + .radio-wrapper {
 }
 
 .radio-inner:has(:checked) {
-    border: 2px solid var(--stroke-hightlight);
+    border: 2px solid var(--stroke-highlight);
 }
 
 .radio-inner:has(:checked) .radio-image {

@@ -28,7 +28,7 @@
 
 .dropzone:hover {
     border-width: 2px;
-    border-color: var(--stroke-hightlight);
+    border-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
     
 }
@@ -38,5 +38,5 @@
 }
 
 .dropzone:hover svg path {
-    stroke: var(--stroke-hightlight); /*troquei a img pelo link SVG e depois foi só mudar a cor com esse stroke aqui*/
+    stroke: var(--stroke-highlight); /*troquei a img pelo link SVG e depois foi só mudar a cor com esse stroke aqui*/
 }
