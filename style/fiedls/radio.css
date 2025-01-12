@@ -18,7 +18,6 @@ label + .radio-wrapper {
 
     padding: 2rem .5rem .5rem;
     position: relative;
-
 }
 
 .radio-inner input,input:focus,input:hover {
@@ -39,9 +38,7 @@ label + .radio-wrapper {
 }
 
 .radio-inner:hover, .radio-inner:focus-within {
-    border: 1px solid var(--stroke-hightlight);
-
-    
+    border: 1px solid var(--stroke-hightlight);  
 }
 
 .radio-inner:hover .radio-image, 
