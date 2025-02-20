@@ -21,6 +21,7 @@ main .voltar {
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
+   
 }
 
 main h1 {
@@ -44,10 +45,36 @@ aside .aside-container {
 }
 
 aside h2 {
-    font: 600 2.5rem/1.25 var(--font-family);
+    font: 800 2.5rem/1.25 var(--font-);
     margin-bottom: 0.5rem;
 }
 
 aside h2 span {
     color: var(--text-hightlight);
 }
+
+@media (max-width: 767px) {
+
+    #app {
+        display: flex;
+        flex-direction: column-reverse; /*Inverte a ordem: aside vem antes do main*/
+        overflow: auto; /* Faz a rolagem ser controlada no contêiner principal */
+        height: 100vh; /* Garante que o app ocupe a altura da tela */
+    }
+    
+    main {
+        flex: 1; /*main ter um espaço flexível, preenchendo o restante do espaço */
+        overflow: visible; /* Remove a rolagem do main */
+        padding: 1.5rem;
+    }
+    
+    aside {
+        flex: 0 1 300px; 
+    }
+
+
+    main p {
+        max-width: 100%; /* Ajusta conforme o container */
+        font-size: 15px;
+    }
+}    

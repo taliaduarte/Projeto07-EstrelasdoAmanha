@@ -29,6 +29,7 @@
 
     font: var(--text);
     color: var(--text-secondary);
+    overflow: hidden;
   }
 
   h1, h2 {
@@ -51,3 +52,20 @@
   .flex-2 {
     flex: 2;
   }
+
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .grid-mobile {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr;
+  }
+
+  .desktop-only {
+    display: none;
+}
+
+}
